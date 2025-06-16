@@ -1,15 +1,17 @@
 function firstWord(s) {
   // your code here
-	if(s.length===0 || s.trim() === undefined) {
+	let str = s.trim();
+	if(str.length===0 || str === undefined) {
 		return ``;
 	}
-	let res = [];
 
-	let ans = s.split(" ");
+	let ans = str.split(" ");
 	return `${ans[0]}`;
 }
 
 // Do not change the code below
 
+
 const s = prompt("Enter String:");
 alert(firstWord(s));
+
